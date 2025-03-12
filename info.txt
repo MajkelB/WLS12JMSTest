@@ -1,0 +1,15 @@
+WLS configuration
+
+Messaging:
+
+PersistentStores:	MyFileStore					(Target AdminServer)
+JMSServer:		MyJMSServer					(Target AdminServer)
+				MyFileStore
+
+MyJMSModule:		MyJMSModule					(Target AdminServer)
+				MyConnectionFactory			(Target AdminServer)
+					jms/MyConnectionFactory
+				MyQueue					(Target MyJMSServer)
+					jms/MyQueue
+
+
