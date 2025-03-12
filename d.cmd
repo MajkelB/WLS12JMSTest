@@ -1,0 +1,1 @@
+copy target\jms.war C:\Dane\Domeny\JMSTest\autodeploy
